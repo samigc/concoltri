@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CONCOLTRI</title>
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="concoltri.css">
+</head>
+<body>
+  <div class="header raised">
+      <h2>  I Congreso Colombiano de
+      </h2>
+      <div class="aright">
+
+        <h1>Teoría de Respuesta al Item
+        <br>I CONCOLTRI</h1>
+      </div>
+      <div class="aleft">
+      <h3>APRIL 28-29, 2016. Bogotá, Colombia
+      </h3></div>
+
+    <div class="sections container">
+      <a href="#concoltri" class="section raised">
+        CONCOLTRI
+      </a>
+      <a href="#team" class="section raised">
+        SICS Research
+      </a>
+      <a href="#IRTpp" class="section raised">
+        IRTpp
+      </a>
+      <a href="#submit" class="section raised">
+        Submit to the conference
+      </a>
+      <a href="#sponsor" class="section raised">
+        Sponsors
+      </a>
+    </div>
+  </div>
+  <div class="content raised">
+    <h1>I CONCOLTRI</h1>
+    <div class="panel" id="concoltri">
+      <p>
+      <p>
+        The I CONCOLTRI is an international event whose purpose is to allow for discussion and
+    interaction among researchers, academics, politicians and students, in the foundations and
+    applications of the <b>Item Response Theory</b> (IRT).
+    <div class="center">
+    <img src="ciencias.jpg" alt="facultadCiencias">
+    </div>
+
+      </p>
+
+      <p>
+  The statistical models of the IRT and their implementations are currently used by
+  universities, goverment institutions and researchers in Colombia and Latin America.
+  However, there is not a sufficient knowledge about the models and techniques that are
+  being used.
+
+</p>
+
+
+    </div>
+    <h1>SICS Research Group</h1>
+      <div id="team" class="panel raised">
+        <p>
+
+        </p>
+        <p>
+          The SICS Research Group, is a group of the Universidad Nacional de Colombia which is
+
+          working in research, innovation and diffusion of IRT. The I CONCOLTRI is organized by
+
+          the SICS Research Group.
+        </p>
+        <p>
+
+        </p>
+
+      </div>
+      <h1>IRTpp</h1>
+      <div id="IRTpp" class="panel raised">
+        <p>An implementation of the IRT paradigm for the scoring of different instruments measuring latent traits (a.k.a Abilities) and estimating item parameters for a variety of models, this package is highly optimized using Rcpp and carefully written R for the rest of the package, it aims to expand IRT applications to those applications that require faster and more robust estimation procedures.</p>
+      </div>
+      <h1>Submit to the conference</h1>
+      <div id="submit" class="panel raised">
+        <p>
+          <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbw4MtHD4hFsECzlDyVurl7seAbavnrZfMUmx8HAx1kemlf3pSU/exec">
+    <!-- change the form action to your script url -->
+
+    <fieldset class="pure-group">
+      <label for="name">Name: </label>
+      <input id="name" name="name" placeholder="Name or organisation" />
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="10"
+      placeholder="Why do you want to contact us..."></textarea>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="email"><em>Your</em> Email Address:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="your.name@email.com"/>
+      <span id="email-invalid" style="visibility:hidden">
+        Must be a valid email address</span>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="color">Favourite Color: </label>
+      <input id="color" name="color" placeholder="green" />
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+  </form>
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
+          Submit your <b>Conferences , Mini course, Contributed Talk, or Poster</b>
+        </p>
+        <h2>Deadline (Contributed Talks and poster presentations): March 28th 2016 </h2>
+        The preliminary deadline for contributed talks and poster presentations is March 28th,
+
+        2016. The spoken languages of the meeting will be Spanish, Portuguese and English. There
+
+        will be invited conferences, mini-courses, contributed talks and posters.
+
+
+      </div>
+
+  </div>
+  <div class="footer raised">
+    We look forward to see you in Bogotá. On behalf of the Organizing Committee, A M
+    <div class="contact">
+    <div class="upper">
+      (President)
+    </div>
+    <div class="lower">
+    Montenegro
+    </div>
+    </div>
+    , L F Parra, C E Pardo, A P Rozo
+    <div id="sponsor" class="sponsor raised">
+      <h1>Sponsored by : </h1>
+      <div class="container">
+        <div class="image">
+          <img class="raised" src="icfes.png" alt="ICFES">
+        </div>
+        <div class="image">
+          <img class="raised" src="unal-ciencias.png" alt="ICFES">
+        </div>
+        <div class="image">
+          <img class="raised" src="colciencias.png" alt="ICFES">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+
+
+<!-- Submit the Form to Google Using "AJAX" -->
+<script data-cfasync="false" type="text/javascript">
+
+function validEmail(email) { // see:
+  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+  return re.test(email);
+}
+// get all data in form and return object
+function getFormData() {
+  var elements = document.getElementById("gform").elements; // all form elements
+  var fields = Object.keys(elements).filter(function(k){
+    return k.length > 1 && elements[k].name && elements[k].name.length > 0 ;
+  });
+  var data = {};
+  fields.forEach(function(k){
+    data[k] = elements[k].value;
+  });
+  console.log(data);
+  return data;
+}
+
+function handleFormSubmit(event) {  // handles form submit withtout any jquery
+  event.preventDefault();           // we are submitting via xhr below
+  var data = getFormData();         // get the values submitted in the form
+  if( !validEmail(data.email) ) {   // if email is not valid show error
+    document.getElementById('email-invalid').style.display = 'block';
+    return false;
+  } else {
+    var url = event.target.action;  //
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', url);
+    // xhr.withCredentials = true;
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function() {
+        console.log( xhr.status, xhr.statusText )
+        console.log(xhr.responseText);
+        document.getElementById('gform').style.display = 'none'; // hide form
+        document.getElementById('thankyou_message').style.display = 'block';
+        return;
+    };
+    // url encode form data for sending as post data
+    var encoded = Object.keys(data).map(function(k) {
+        return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
+    }).join('&')
+    xhr.send(encoded);
+  }
+}
+function loaded() {
+  console.log('contact form submission handler loaded successfully');
+  // bind to the submit event of our form
+  var form = document.getElementById('gform');
+  form.addEventListener("submit", handleFormSubmit, false);
+};
+document.addEventListener('DOMContentLoaded', loaded, false);
+</script> -->
+<!-- END -->
+</body>
+</html>
